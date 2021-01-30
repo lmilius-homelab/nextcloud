@@ -1,0 +1,11 @@
+---
+kind: pipeline
+name: nextcloud
+type: docker
+
+steps:
+- name: Build
+  image: plugins/docker
+  settings:
+    repo: registry.lukemilius.com/nextcloud
+    auto_tag: true
