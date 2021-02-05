@@ -5,4 +5,4 @@ RUN apt-get update && \
     php-pear \
     && rm -rf /var/lib/apt/lists/*
     
-pecl install smbclient
+RUN pecl install smbclient
